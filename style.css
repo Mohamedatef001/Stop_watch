@@ -1,0 +1,65 @@
+@font-face {
+    font-family: curvy;
+    src: url(fonts/LilitaOne-Regular.ttf);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#container{
+    color: black;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.999);
+}
+#container #display{
+    font-size: 6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#container #control{
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#container button{
+    background-color: rgb(98, 100, 102);
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+    font-family: curvy;
+    font-weight: normal;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.999);
+    cursor: pointer;
+} 
+#container button:hover{
+    background-color: rgb(122, 123, 124);
+}
+#container button:active{
+    background-color: rgb(152, 154, 156);
+}
+
+@media (max-width:920px){
+    #container{
+        margin: 15px;
+    }
+    #container #control{
+        flex-direction: column;
+    }
+    #container #display{
+        font-size: 4rem;
+    }
+}
